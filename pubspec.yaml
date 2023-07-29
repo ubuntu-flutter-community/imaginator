@@ -1,5 +1,5 @@
-name: licenses
-description: YaruMasterDetailPage example
+name: imaginator
+description: Image Viewer
 publish_to: 'none'
 
 environment:

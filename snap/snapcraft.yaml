@@ -1,24 +1,22 @@
-name: licenses
+name: imaginator
 version: git
-summary: Licenses
-description: YaruMasterDetailPage example
+summary: imaginator
+description: Image Viewer
 confinement: strict
 base: core22
 grade: stable
 license: GPL-3.0+
 architectures:
   - build-on: amd64
-    build-for: amd64
   - build-on: arm64
-    build-for: arm64
 
 parts:
-  licenses:
+  imaginator:
     plugin: flutter
     source: .
 
 apps:
-  licenses:
-    command: licenses
-    desktop: data/flutter_assets/assets/licenses.desktop
+  imaginator:
+    command: imaginator
+    desktop: data/flutter_assets/assets/imaginator.desktop
     extensions: [gnome]

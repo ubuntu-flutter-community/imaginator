@@ -1,10 +1,10 @@
 [Desktop Entry]
 Type=Application
 Version=1.0
-Name=Licenses
+Name=Imaginator
 Comment=YaruMasterDetailPage example
-Keywords=flutter;yaru;example;
-Exec=licenses
-Icon=licenses
+Keywords=flutter;yaru;
+Exec=imaginator
+Icon=gallery-app
 Terminal=false
 Categories=Example;

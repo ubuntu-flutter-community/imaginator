@@ -2,7 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:licenses/home.dart';
+import 'package:imaginator/home.dart';
 import 'package:yaru/yaru.dart';
 
 class Imaginator extends StatelessWidget {
