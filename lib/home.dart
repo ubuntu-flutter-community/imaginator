@@ -31,7 +31,7 @@ class _HomeState extends State<Home> {
     final theme = Theme.of(context);
     return MouseRegion(
       onEnter: (_) => setState(() => showButtons = true),
-      onExit: (_) => setState(() => showButtons = false),
+      onExit: (event) => setState(() => showButtons = false),
       child: Scaffold(
         body: Listener(
           onPointerSignal: (event) {
@@ -144,9 +144,14 @@ class _HomeState extends State<Home> {
   }
 
   void _zoom(bool zoomIn) {
-    if(controller.scale == null) return;
-    setState(() {
-        controller.scale = controller.scale! + (zoomIn ? +0.1 : -0.1);
+    if (zoomIn) {
+      setState(() {
+        controller.scale = controller.scale! + 0.1;
       });
+    } else {
+      setState(() {
+        controller.scale = controller.scale! - 0.1;
+      });
+    }
   }
 }
