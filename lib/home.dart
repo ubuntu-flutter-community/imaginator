@@ -144,14 +144,9 @@ class _HomeState extends State<Home> {
   }
 
   void _zoom(bool zoomIn) {
-    if (zoomIn) {
-      setState(() {
-        controller.scale = controller.scale! + 0.1;
+    if(controller.scale == null) return;
+    setState(() {
+        controller.scale = controller.scale! + (zoomIn ? +0.1 : -0.1);
       });
-    } else {
-      setState(() {
-        controller.scale = controller.scale! - 0.1;
-      });
-    }
   }
 }
